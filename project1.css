@@ -1,0 +1,81 @@
+body {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+.title {
+    text-align: center;
+    font-size: 175%;
+}
+.menuItem1,
+.menuItem2,
+.menuItem3 {
+    overflow: auto;
+    width: 30%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    float: left;
+}
+#spaghetti,
+#lasagna,
+#pizza {
+    font-size: 125%;
+    padding: 10px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+.menuDesc1,
+.menuDesc2,
+.menuDesc3 {
+    padding: 10px;
+    position: relative;
+    clear: both;
+}
+.menuItem1,
+.menuDesc1 {
+    background-color: green;
+}
+.menuItem2,
+.menuDesc2 {
+    background-color: white;
+}
+.menuItem3,
+.menuDesc3 {
+    background-color: red;
+}
+#spaghetti,
+#lasagna,
+#pizza {
+    background-color: yellow;
+}
+@media (min-width: 992px) {
+    .menuItem1,
+    .menuItem2,
+    .menuItem3 {
+        width: 30%;
+        float: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuItem1,
+    .menuItem2 {
+        width: 45%;
+        float: left;
+    }
+    .menuItem3 {
+        width: 100%;
+        clear: both;;
+    }
+}
+@media (max-width: 767px) {
+    .menuItem1,
+    .menuItem2,
+    .menuItem3 {
+        width: 100%;
+    }
+}
